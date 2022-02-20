@@ -118,7 +118,7 @@ ul {
   width: 100%;
   z-index: 90;
   background-color: white;
-  position: fixed;
+  position: absolute;
   -webkit-box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
@@ -473,9 +473,10 @@ li.dropdown {
 }
 .form .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
   gap: 20px;
 }
+
 .form .container .box {
   background-color: white;
   padding: 30px 15px;
@@ -525,8 +526,6 @@ li.dropdown {
   font-size: 20px;
   display: grid;
   padding: 2px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 .form .box h2 {
   font-family: "Courier New", Courier, monospace;
