@@ -118,7 +118,7 @@ ul {
   width: 100%;
   z-index: 90;
   background-color: white;
-  position: absolute;
+  position: fixed;
   -webkit-box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
