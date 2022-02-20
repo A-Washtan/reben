@@ -11,6 +11,12 @@
   --main-padding-bottom: 100px;
   --section-background: #ececec;
 }
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -459,7 +465,95 @@ li.dropdown {
   font-weight: bold;
 }
 /* End Stats */
+/* start form */
+.form {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.form .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  gap: 20px;
+}
+.form .container .box {
+  background-color: white;
+  padding: 30px 15px;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+  transition: var(--main-transition);
+}
+.form .box {
+  background-color: white;
+  padding: 30px 15px;
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+  transition: var(--main-transition);
+}
+.form .box::before,
+.form .box::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--main-color);
+  transition: 1s;
+  height: 0;
+}
+.form .box::before {
+  top: 0;
+  right: 0;
+}
+.form .box::after {
+  left: 0;
+  bottom: 0;
+}
+.form .box:hover {
+  opacity: 1;
+}
+.form .box:hover::before,
+.form .box:hover::after {
+  height: 100%;
+}
+.form .box p:first-child {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+.form .box p {
+  color: var(--main-color);
+  font-size: 20px;
+  display: grid;
+  padding: 2px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.form .box h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+.form .box svg {
+  margin: 87px 0;
+}
+.form .box input {
+  border-radius: 6px;
+}
+.form .box textarea {
+  border-radius: 6px;
+}
+.form .box button {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  color: brown;
+  font-size: 22px;
+}
+.form .box button:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: 1.5s;
+}
 
+/* End form */
 .footer {
   background-color: #191919;
   padding: 70px 0 0;
