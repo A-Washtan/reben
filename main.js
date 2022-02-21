@@ -26,8 +26,11 @@ function startCount(el) {
 
 
 function myFunction() {
-    document.querySelector('but')
-    if (myFunction == true) {
+    let name = document.forms["form"]["answer1"].value;
+    let Email = document.forms["form"]["answer1"].value;
+    let textAeria = document.forms["form"]["answer1"].value;
+    let inbut = true;
+    if (i = 0; i = inbut; i++) {
         alert('god');
     } else {
         alert('يرجى ');
