@@ -118,7 +118,7 @@ ul {
   width: 100%;
   z-index: 90;
   background-color: white;
-  position: absolute;
+  position: fixed;
   -webkit-box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
@@ -521,32 +521,37 @@ li.dropdown {
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
 }
-.form .box p {
+.form .box form {
+  margin: 4%;
   color: var(--main-color);
   font-size: 20px;
-  display: grid;
+  display: inline-grid;
   padding: 2px;
 }
+.form .box input {
+  margin: 14px;
+  border-radius: 6px;
+}
+
 .form .box h2 {
   font-family: "Courier New", Courier, monospace;
 }
 .form .box svg {
   margin: 87px 0;
 }
-.form .box input {
-  border-radius: 6px;
-}
+
 .form .box textarea {
   border-radius: 6px;
+  margin: 14px;
 }
-.form .box button {
+.form .box .but {
+  margin: 12px 101px;
   width: 30%;
   padding: 10px;
-  text-align: center;
   color: brown;
   font-size: 22px;
 }
-.form .box button:hover {
+.form .box .but:hover {
   background-color: var(--main-color);
   color: white;
   transition: 1.5s;

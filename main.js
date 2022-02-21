@@ -22,3 +22,15 @@ function startCount(el) {
         }
     }, 5000 / goal);
 }
+
+
+
+function myFunction() {
+    document.querySelector('but')
+    if (myFunction == true) {
+        alert('god');
+    } else {
+        alert('يرجى ');
+    }
+}
+
